@@ -307,14 +307,14 @@
             <strong>15150727726</strong>
           </span>
         </a>
-        <!-- 微信 -->
-        <div class="contact-btn contact-btn--wechat" id="wechatBtn">
+        <!-- 微信（点击复制） -->
+        <a class="contact-btn contact-btn--wechat" id="wechatBtn" onclick="copyWechat()">
           <span class="contact-btn__icon">💬</span>
           <span class="contact-btn__text">
-            <small>微信联系</small>
+            <small>微信联系（点击复制）</small>
             <strong>15150727726</strong>
           </span>
-        </div>
+        </a>
         <!-- CTA按钮 -->
         <button class="cta-button" onclick="document.querySelector('.contact-btn--phone').click()">
           ✨ 立即预约咨询
@@ -348,6 +348,18 @@
   </button>
 
   <script src="js/main.js"></script>
+
+  <!-- 微信复制 -->
+  <div class="toast" id="toast">✅ 微信号已复制，打开微信添加好友</div>
+  <script>
+    function copyWechat() {
+      navigator.clipboard.writeText('15150727726').then(function () {
+        var t = document.getElementById('toast');
+        t.classList.add('toast--show');
+        setTimeout(function () { t.classList.remove('toast--show'); }, 2000);
+      });
+    }
+  </script>
 
   <!-- PWA 注册 -->
   <script>

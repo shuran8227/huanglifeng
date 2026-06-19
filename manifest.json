@@ -1,0 +1,18 @@
+{
+  "name": "黄利凤 - 金牌月嫂",
+  "short_name": "黄利凤月嫂",
+  "description": "黄利凤金牌月嫂个人简历 - 8年经验·持证上岗",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFF8F5",
+  "theme_color": "#E8917E",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/portrait.jpg",
+      "sizes": "400x531",
+      "type": "image/jpeg"
+    }
+  ],
+  "lang": "zh-CN"
+}
